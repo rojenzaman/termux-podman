@@ -1,4 +1,4 @@
-# Termux environment for Docker.
+# Termux environment for Docker/Podman.
 
 A [Termux](https://termux.com) i686 (x86_64) environment packaged into Docker image.
 Environment doesn't have Android runtime components, so certain things will
@@ -18,6 +18,21 @@ docker run -it xeffyr/termux:latest
 You can build Docker image yourself by running this script:
 ```
 ./build-all.sh
+```
+
+### Using with Podman
+
+If you have Podman instead of Docker, usage is nearly same.
+
+Building image:
+```
+./build-all.sh --podman
+```
+
+Running image:
+```
+./run.sh --podman
+./run-x86_64.sh --podman
 ```
 
 ## Known issues
